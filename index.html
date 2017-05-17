@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+	<!--
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="../../turn.min.js"></script>
+	-->
+	<meta charset="utf-8">
+	<title>Prophets of Christianity</title>
+
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="turn.min.js"></script>
+
+
+	<style type="text/css">
+		body{
+			background:#ccc;
+		}
+		#book{
+			width:800px;
+			height:500px;
+		}
+
+		#book .turn-page{
+			background-color:white;
+		}
+
+		#book .cover{
+			background:#333;
+		}
+
+		#book .cover h1{
+			color:white;
+			text-align:center;
+			margin:0px;
+		}
+
+		#book .loader{
+			background-image:url(loader.gif);
+			width:24px;
+			height:24px;
+			display:block;
+			position:absolute;
+			top:238px;
+			left:188px;
+		}
+
+		#book .data{
+			text-align:center;
+			font-size:40px;
+			color:#999;
+			line-height:500px;
+		}
+
+		#controls{
+			width:800px;
+			text-align:center;
+			margin:20px 0px;
+			font:30px arial;
+		}
+
+		#controls input, #controls label{
+			font:30px arial;
+		}
+
+		#book .odd{
+			background-image:-webkit-linear-gradient(left, #FFF 95%, #ddd 100%);
+			background-image:-moz-linear-gradient(left, #FFF 95%, #ddd 100%);
+			background-image:-o-linear-gradient(left, #FFF 95%, #ddd 100%);
+			background-image:-ms-linear-gradient(left, #FFF 95%, #ddd 100%);
+		}
+
+		#book .even{
+			background-image:-webkit-linear-gradient(right, #FFF 95%, #ddd 100%);
+			background-image:-moz-linear-gradient(right, #FFF 95%, #ddd 100%);
+			background-image:-o-linear-gradient(right, #FFF 95%, #ddd 100%);
+			background-image:-ms-linear-gradient(right, #FFF 95%, #ddd 100%);
+		}
+		.pagePadding{
+			padding-left: 15px;
+			padding-bottom: 10px;
+	}
+	</style>
+</head>
+<body>
+
+	<div id="book">
+		<div class="cover"><h1>Prophets of Christianity</h1></div>
+		<div>
+			TITLES OF A PROPHET
+			<hr>
+			<p>PROPHET: This title, the most commonly used, emphasizes that the person was an authoritative spokesman for God. </p>
+			<p>SEER: This word focuses on the way in which the prophet received God’s message. </p>
+			<p>MAN OF GOD: This title identifies the prophet as one who knew God and one whom God had commissioned for a specific task.</p>
+			<p>SERVANT OF THE LORD: This term stresses the close relationship between God and his faithful messenger.</p>
+			<p>MESSENGER OF THE LORD: This term focuses on the mission and the message rather than on the person. It emphasizes the fact that God sent a prophet to deliver a message—the word of God.</p>
+		</div>
+		
+		<div>
+			<p>The third term, nabbi’, appears 309 times in its noun form and almost 600 times in its verb forms.Whenwe trace this term through the Old Testament, it becomes clear that nabbi’ refers primarily to one who speaks for someone else, someone who acts as a “mouth” for another (Exod. 7:1). Whenever God assigned a specific task to a prophet, the assignment always focused on speaking God’s message. Therefore, the basic meaning of the term nabbi’ is “to speak God’s message,” to be a “speaker for God,” “one who is a spokesman for God” (Deut. 18:18; Jer. 1:7; Isa. 1:20). The nabbi’ was a divinely inspired preacher who faithfully spoke the message God had revealed. When the prophet spoke, God spoke.</p>
+
+			<p>New Testament Terms The primary New Testament term for a prophet or prophetess is the Greek noun prophetes, and the Greek verb propheteuo means “to prophesy.” These words, like their Old Testament counterparts, refer to one who speaks for God, one who speaks the word and will of God. The New Testament prophet brought God’s word to his fellowman.</p>
+
+		</div>
+	</div>
+
+	<div id="controls">
+		<label for="page-number">Page:</label> <input type="text" size="3" id="page-number"> of <span id="number-pages"></span>
+	</div>
+
+	<script type="text/javascript">
+		// Sample using dynamic pages with turn.js
+		var numberOfPages; 
+		
+		var jsonProphets;
+		
+		jsonProphets = [
+			{"id":0, "name":"Feature Prophets", "type":""},
+			{"id":1, "name":"Elijah", "sacredscripture":"1 Kings", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":"major"},
+			{"id":2, "name":"Elisha", "sacredscripture":"2 Kings", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":3, "name":"Isaiah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":4, "name":"Jeremiah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":5, "name":"Ezekiel", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":6, "name":"Daniel", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":7, "name":"Obadiah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":"minor"},
+			{"id":8, "name":"Joel", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":9, "name":"Jonah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":10, "name":"Amos", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":12, "name":"Hosea", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":13, "name":"Micah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":14, "name":"Nahum", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":15, "name":"Habakkuk", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":16, "name":"Zephaniah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":17, "name":"Haggai", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":18, "name":"Zechariah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
+			{"id":19, "name":"Malachi", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""}	
+		];
+		
+		numberOfPages = jsonProphets.length + 1;		
+		
+		// Adds the pages that the book will need
+		function addPage(page, book) {
+			// 	First check if the page is already in the book
+			if (!book.turn('hasPage', page)) {
+				// Create an element for this page
+				var element = $('<div />', {'class': 'page '+((page%2==0) ? 'odd' : 'even'), 'id': 'page-'+page}).html('<i class="loader"></i>');
+				// If not then add the page
+				book.turn('addPage', element, page);
+				// Let's assum that the data is comming from the server and the request takes 1s.
+				setTimeout(function(){
+						element.html('<div class="data">Data for page '+page+'</div>');
+				}, 1000);
+			}
+		}
+		
+		var getProphetName = function(){}
+		var getProphetSetting = function(){}
+		var getProphetTimeLine = function(){}
+		var getProphetName = function(){}
+		var getProphetName = function(){}
+		var getProphetName = function(){}
+		var getProphetName = function(){}
+		var getProphetName = function(){}
+
+		function addTestLines(){
+			var i, prof;
+			for (i=0; i<19; i+=1) {
+				prof = jsonProphets[i].name; console.log(prof);
+				$('#book').append("<div>"+prof+"</div>");
+			}
+		}
+		
+		addTestLines();
+		
+		$(window).ready(function(){
+			$('#book').turn({acceleration: true,
+								pages: numberOfPages,
+								elevation: 50,
+								gradients: !$.isTouch,
+								when: {
+									turning: function(e, page, view) {
+
+										// Gets the range of pages that the book needs right now
+										var range = $(this).turn('range', page);
+
+										// Check if each page is within the book
+										for (page = range[0]; page<=range[1]; page++) 
+											addPage(page, $(this));
+
+									},
+
+									turned: function(e, page) {
+										$('#page-number').val(page);
+									}
+								}
+							});
+
+			$('#number-pages').html(numberOfPages);
+
+			$('#page-number').keydown(function(e){
+
+				if (e.keyCode==13)
+					$('#book').turn('page', $('#page-number').val());
+					
+			});
+			
+			
+			
+		});
+
+		$(window).bind('keydown', function(e){
+
+			if (e.target && e.target.tagName.toLowerCase()!='input')
+				if (e.keyCode==37)
+					$('#book').turn('previous');
+				else if (e.keyCode==39)
+					$('#book').turn('next');
+
+		});
+
+	</script>
+
+
+</body>
+</html>
