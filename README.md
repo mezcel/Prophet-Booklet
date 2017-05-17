@@ -1,6 +1,5 @@
 # Prophet-Booklet
-
-## page curl, page turn, text reader
+page curl, page turn, text reader
 
 ### About
 I am mearley applying turn.js with text content featuring prophets of the Christian Bible.
