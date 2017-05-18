@@ -16,6 +16,6 @@ You must unzip to extracct turn.js version 3 [turn.min.js](https://github.com/me
 
 Right now I am using turn.js version 3 for the test bench, but hope to finalize with turn.js Version 4.
 
-Version 4 looks prettier [web](http://www.turnjs.com/)
+Version 4 looks prettier [TURNJS Home Page](http://www.turnjs.com/)
 
 
