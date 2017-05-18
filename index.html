@@ -17,8 +17,8 @@
 			background:#ccc;
 		}
 		#book{
-			width:800px;
-			height:500px;
+				width:800px;
+				height:600px;		
 		}
 
 		#book .turn-page{
@@ -107,6 +107,7 @@
 	<div id="controls">
 		<label for="page-number">Page:</label> <input type="text" size="3" id="page-number"> of <span id="number-pages"></span>
 	</div>
+	<input id="myPageSlider" type="range" min="0" max="20" value="0" step="1" onmouseup="mySliderToPage(this.value)"><span id"sliderPage" ></span>
 
 	<script type="text/javascript">
 		// Sample using dynamic pages with turn.js
@@ -152,25 +153,24 @@
 				}, 1000);
 			}
 		}
-		
-		var getProphetName = function(){}
-		var getProphetSetting = function(){}
-		var getProphetTimeLine = function(){}
-		var getProphetName = function(){}
-		var getProphetName = function(){}
-		var getProphetName = function(){}
-		var getProphetName = function(){}
-		var getProphetName = function(){}
-
 		function addTestLines(){
 			var i, prof;
 			for (i=0; i<19; i+=1) {
 				prof = jsonProphets[i].name; console.log(prof);
 				$('#book').append("<div>"+prof+"</div>");
 			}
+		}		
+		addTestLines();
+		
+		function myPageToSlider(page){
+			//$("#myPageSlider").value(page);
+			document.getElementById("myPageSlider").value = page;
 		}
 		
-		addTestLines();
+		function mySliderToPage(pageNo){
+			//$('#sliderPage').html(pageNo);
+			$('#book').turn('page', pageNo);			
+		}
 		
 		$(window).ready(function(){
 			$('#book').turn({acceleration: true,
@@ -191,6 +191,7 @@
 
 									turned: function(e, page) {
 										$('#page-number').val(page);
+										myPageToSlider(page);
 									}
 								}
 							});
@@ -202,10 +203,7 @@
 				if (e.keyCode==13)
 					$('#book').turn('page', $('#page-number').val());
 					
-			});
-			
-			
-			
+			});			
 		});
 
 		$(window).bind('keydown', function(e){
