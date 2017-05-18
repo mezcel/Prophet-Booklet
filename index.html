@@ -9,7 +9,7 @@
 	<title>Prophets of Christianity</title>
 
 	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="turn.min.js"></script>
+	<script type="text/javascript" src="turn.min.js"></script> <!-- turn.js version 3 -->
 
 
 	<style type="text/css">
@@ -18,7 +18,8 @@
 		}
 		#book{
 				width:800px;
-				height:600px;		
+				height:600px;
+				background:red;
 		}
 
 		#book .turn-page{
@@ -53,14 +54,19 @@
 		}
 
 		#controls{
-			width:800px;
+			/*width:800px;*/
 			text-align:center;
 			margin:20px 0px;
-			font:30px arial;
+			font:18px arial;
+			left: 50%;
+			right: 50%;
+		}
+		#controls input, #controls label, #controls span{
+			font:18px arial;
 		}
 
-		#controls input, #controls label{
-			font:30px arial;
+		#number-pages{
+			border: none;
 		}
 
 		#book .odd{
@@ -68,6 +74,8 @@
 			background-image:-moz-linear-gradient(left, #FFF 95%, #ddd 100%);
 			background-image:-o-linear-gradient(left, #FFF 95%, #ddd 100%);
 			background-image:-ms-linear-gradient(left, #FFF 95%, #ddd 100%);
+			border: solid 10px;
+			border-left: 10px;
 		}
 
 		#book .even{
@@ -79,7 +87,19 @@
 		.pagePadding{
 			padding-left: 15px;
 			padding-bottom: 10px;
-	}
+		}
+
+		p{
+   			text-indent: 30px;
+		}
+		.prophetHeader {
+			background-color: gray;
+
+		}
+		.mypageFooter{
+			bottom: 0px;
+		}
+
 	</style>
 </head>
 <body>
@@ -95,7 +115,7 @@
 			<p>SERVANT OF THE LORD: This term stresses the close relationship between God and his faithful messenger.</p>
 			<p>MESSENGER OF THE LORD: This term focuses on the mission and the message rather than on the person. It emphasizes the fact that God sent a prophet to deliver a message—the word of God.</p>
 		</div>
-		
+
 		<div>
 			<p>The third term, nabbi’, appears 309 times in its noun form and almost 600 times in its verb forms.Whenwe trace this term through the Old Testament, it becomes clear that nabbi’ refers primarily to one who speaks for someone else, someone who acts as a “mouth” for another (Exod. 7:1). Whenever God assigned a specific task to a prophet, the assignment always focused on speaking God’s message. Therefore, the basic meaning of the term nabbi’ is “to speak God’s message,” to be a “speaker for God,” “one who is a spokesman for God” (Deut. 18:18; Jer. 1:7; Isa. 1:20). The nabbi’ was a divinely inspired preacher who faithfully spoke the message God had revealed. When the prophet spoke, God spoke.</p>
 
@@ -106,39 +126,49 @@
 
 	<div id="controls">
 		<label for="page-number">Page:</label> <input type="text" size="3" id="page-number"> of <span id="number-pages"></span>
+		<br>
+		<input id="myPageSlider" type="range" min="0" max="19" value="0" step="1" onmouseup="mySliderToPage(this.value)"><span id"sliderPage" ></span>
 	</div>
-	<input id="myPageSlider" type="range" min="0" max="20" value="0" step="1" onmouseup="mySliderToPage(this.value)"><span id"sliderPage" ></span>
+
 
 	<script type="text/javascript">
 		// Sample using dynamic pages with turn.js
-		var numberOfPages; 
-		
+		var numberOfPages;
 		var jsonProphets;
-		
+
 		jsonProphets = [
-			{"id":0, "name":"Feature Prophets", "type":""},
-			{"id":1, "name":"Elijah", "sacredscripture":"1 Kings", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":"major"},
-			{"id":2, "name":"Elisha", "sacredscripture":"2 Kings", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":3, "name":"Isaiah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":4, "name":"Jeremiah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":5, "name":"Ezekiel", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":6, "name":"Daniel", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":7, "name":"Obadiah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":"minor"},
-			{"id":8, "name":"Joel", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":9, "name":"Jonah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":10, "name":"Amos", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":12, "name":"Hosea", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":13, "name":"Micah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":14, "name":"Nahum", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":15, "name":"Habakkuk", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":16, "name":"Zephaniah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":17, "name":"Haggai", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":18, "name":"Zechariah", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""},
-			{"id":19, "name":"Malachi", "sacredscripture":"", "setting":"", "timeline":[0,0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "type":""}	
+			{"id":0, "name":"Prophet Name", "sacredscripture":"Where the Prophet appears in the Bible.", "setting":"Where the Prophet mistered.", "timeline":[0, 0], "historyinformaiton":"Brief history about the prophet.", "messageinformation":"Brief highlight about the prophet’s message.", "type":"major prophet, minor prophet, other", "gender":"male/female"},
+			{
+				"id":1, "name":"<b class'prophetHeader'>Elijah</b>, Elijah (Hebrew: אֱלִיָּהוּ, Eliyahu, meaning \"My God is Yahu/Jah\") or Elias (Greek: Ηλίας, Arabic: إلياس or إليا, Ilyās or Ilyā)",
+				"sacredscripture":"Books of Kings in the Hebrew Bible",
+				"setting":"Kingdom of Israel during the reign of Ahab (9th century BC)",
+				"timeline":[-873,-854],
+				"historyinformaiton":"In 1 Kings 18 (Bible), Elijah defended the worship of Yahweh over that of the Canaanite deity Baal. The Christian New Testament describes how Elijah was thought, by some, to be the Messiah. Jesus makes it clear that John the Baptist is \"the Elijah\" who was promised to come in Malachi 4:5.  The Book of Malachi prophesies Elijah's return \"before the coming of the great and terrible day of Yahweh\", making him a harbinger of the Messiah and of the eschaton in various faiths that revere the Hebrew Bible. References to Elijah appear in Ecclesiasticus, the New Testament, the Mishnah and Talmud, the Quran, the Book of Mormon, the Doctrine and Covenants, and Bahá'í writings.",
+				"messageinformation":"<b>Elijah, the prophets and conversion of heart</b><br>Elijah is the \"father\" of the prophets, \"the generation of those who seek him, who seek the face of the God of Jacob.\" Elijah's name, \"The Lord is my God,\" foretells the people's cry in response to his prayer on Mount Carmel. St. James refers to Elijah in order to encourage us to pray: \"The prayer of the righteous is powerful and effective.\" <a href='http:\/\/www.vatican.va\/archive\/ccc_css\/archive\/catechism\/p4s1c1a1.htm' target='_blank'> - <b>2582</b> Catechism</a>",
+				"type":"Major Prophet",
+				"gender":"Male"
+			},
+			{"id":2, "name":"Elisha", "sacredscripture":"2 Kings", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":3, "name":"Isaiah", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":4, "name":"Jeremiah", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":5, "name":"Ezekiel", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":6, "name":"Daniel", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":7, "name":"Obadiah", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":8, "name":"Joel", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":9, "name":"Jonah", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":10, "name":"Amos", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":12, "name":"Hosea", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":13, "name":"Micah", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":14, "name":"Nahum", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":15, "name":"Habakkuk", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":16, "name":"Zephaniah", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":17, "name":"Haggai", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":18, "name":"Zechariah", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""},
+			{"id":19, "name":"Malachi", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":""}
 		];
-		
-		numberOfPages = jsonProphets.length + 1;		
-		
+
+		numberOfPages = jsonProphets.length * 2; // 2 pages per prophet
+
 		// Adds the pages that the book will need
 		function addPage(page, book) {
 			// 	First check if the page is already in the book
@@ -153,25 +183,61 @@
 				}, 1000);
 			}
 		}
-		function addTestLines(){
-			var i, prof;
-			for (i=0; i<19; i+=1) {
-				prof = jsonProphets[i].name; console.log(prof);
-				$('#book').append("<div>"+prof+"</div>");
+		function writeMyPages(){
+			/*
+				2 Pages Per Prophets
+				Page 1 Stats/Bio
+				Page 2 Verbose Content, Intended To be minimal and generic.
+			*/
+			var i, page1String, page2String, name, sacredscripture, setting, historyinformaiton, messageinformation, type, gender;
+			var lifetimeline = [];
+			var prophetPageCounter = 0;
+
+			for (i=0; i < jsonProphets.length; i+=1) {
+
+				name = "Name: <p>" + jsonProphets[i].name + "</p>";
+				sacredscripture = "Scripture Refference: <p>" + jsonProphets[i].sacredscripture + "</p>";
+				setting = "Setting: <p>" + jsonProphets[i].setting + "</p>";
+
+				if (jsonProphets[i].timeline[0] >= 0) {
+					lifetimeline[0] = "AD";
+				} else {
+					lifetimeline[0] = "BC";
+				}
+				if (jsonProphets[i].timeline[1] >= 0) {
+					lifetimeline[1] = "AD";
+				} else {
+					lifetimeline[1] = "BC";
+				}
+				lifetimeline[2] = "Timeline: <p>From " + Math.abs(jsonProphets[i].timeline[0]) + " " + lifetimeline[0] + " - " + Math.abs(jsonProphets[i].timeline[1]) + " " + lifetimeline[1] + "</p>";
+
+				historyinformaiton = "History Note: <p>" + jsonProphets[i].historyinformaiton + "</p>";
+				messageinformation = "Message Note: <p>" + jsonProphets[i].messageinformation + "</p>";
+				type = "Type: <p>" + jsonProphets[i].type + "</p>";
+				gender = "Gender: <p>" + jsonProphets[i].gender + "</p>";
+
+
+				page1String = "<div> Page " + (prophetPageCounter+4) + "<hr>" + name + sacredscripture + setting + lifetimeline[2] + type + gender + "</div>";
+				prophetPageCounter += 1;
+
+				page2String = "<div> Page " + (prophetPageCounter+4) + "<hr>"+ historyinformaiton + messageinformation + "</div>";
+				prophetPageCounter += 1;
+
+				$('#book').append(page1String + page2String);
 			}
-		}		
-		addTestLines();
-		
+		}
+		writeMyPages();
+
 		function myPageToSlider(page){
 			//$("#myPageSlider").value(page);
 			document.getElementById("myPageSlider").value = page;
 		}
-		
+
 		function mySliderToPage(pageNo){
 			//$('#sliderPage').html(pageNo);
-			$('#book').turn('page', pageNo);			
+			$('#book').turn('page', pageNo);
 		}
-		
+
 		$(window).ready(function(){
 			$('#book').turn({acceleration: true,
 								pages: numberOfPages,
@@ -184,7 +250,7 @@
 										var range = $(this).turn('range', page);
 
 										// Check if each page is within the book
-										for (page = range[0]; page<=range[1]; page++) 
+										for (page = range[0]; page<=range[1]; page++)
 											addPage(page, $(this));
 
 									},
@@ -202,8 +268,11 @@
 
 				if (e.keyCode==13)
 					$('#book').turn('page', $('#page-number').val());
-					
-			});			
+
+			});
+
+			//$("#myPageSlider").max(numberOfPages);
+
 		});
 
 		$(window).bind('keydown', function(e){
