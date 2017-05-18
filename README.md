@@ -7,6 +7,9 @@ I am mearley applying turn.js with text content featuring prophets of the Christ
 I hope to expand it the expand on the primary prohets featued in Islam aswell. In oder to list positive similariteis and constructive difference on the faith traditions.
 
 ### Status
+
+Demo Video: [YouTube Link](https://www.youtube.com/watch?v=ZX64A10HAQc)
+
 It works, but its nowhere near a demo yet.
 
 You must unzip to extracct turn.js version 3 [turn.min.js](https://github.com/mezcel/Prophet-Booklet/blob/master/turn.js-master.zip)
