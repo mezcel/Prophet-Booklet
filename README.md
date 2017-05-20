@@ -29,9 +29,9 @@ jsonProphets = jsonProphets.prophets;
 
 * adjust the pages dynamically, or otherwise to account for page grow or shrink
 
-prophet-flipbook.css
+> prophet-flipbook.css
 
-```javascript
+```python
 .sj-book .p1,
 .sj-book .p2,
 .sj-book .p3,
@@ -54,7 +54,7 @@ prophet-flipbook.css
 
 * adjust the pages dynamically, or otherwise to account for page grow or shrink
 
-prophet-flipbook.js
+> prophet-flipbook.js
 
 ```javascript
 if (newPage<pages-3)
