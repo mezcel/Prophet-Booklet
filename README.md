@@ -16,6 +16,7 @@
 
 > The JSON file is intended to illustrate/mirror the JSON file used in the existing JavaScript
 
+Contained within the [Prophet Flipbook - Turnjs 4.zip](https://github.com/mezcel/Prophet-Booklet/blob/master/Prophet%20Flipbook%20-%20Turnjs%204.zip), index.html
 ```javascript
 var jsonProphets = {...};
 jsonProphets = jsonProphets.prophets;
