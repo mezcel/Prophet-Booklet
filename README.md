@@ -2,13 +2,13 @@
 ###### page curl, page turn, text reader
 
 #### About
-I am mearley applying turn.js with text content featuring key prophets of the Christian Bible.
+> I am mearley applying turn.js with text content featuring key prophets of the Christian Bible.
 
-I hope to expand it to include prohets featued in Islam in oder to list constuctive similariteis and constructive difference on the two faith traditions. My intentions are purely academic.
+> I hope to expand it to include prohets featued in Islam in oder to list constuctive similariteis and constructive difference on the two faith traditions. My intentions are purely academic.
 
 #### Status
 
-Outdated Demo Video: [YouTube Link](https://www.youtube.com/watch?v=vby99NIII28)
+> Outdated Demo Video: [YouTube Link](https://www.youtube.com/watch?v=vby99NIII28)
 
 ##### Dev. Notes
 
