@@ -31,7 +31,7 @@ jsonProphets = jsonProphets.prophets;
 
 > prophet-flipbook.css
 
-```python
+```css
 .sj-book .p1,
 .sj-book .p2,
 .sj-book .p3,
@@ -54,7 +54,7 @@ jsonProphets = jsonProphets.prophets;
 
 * adjust the pages dynamically, or otherwise to account for page grow or shrink
 
-> prophet-flipbook.js
+<em> prophet-flipbook.js</em>
 
 ```javascript
 if (newPage<pages-3)
