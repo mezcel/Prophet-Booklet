@@ -21,4 +21,47 @@
 var jsonProphets = {...};
 jsonProphets = jsonProphets.prophets;
 ```
-All I am updating now is just the text readings.
+### MOD Focal Points
+
+* I based my template off of: [Developer of Turn.Js - Emmanuel Garcia ](https://github.com/blasten/turn.js/wiki/Reference)
+
+##### CSS
+
+* adjust the pages dynamically, or otherwise to account for page grow or shrink
+
+prophet-flipbook.css
+
+```javascript
+.sj-book .p1,
+.sj-book .p2,
+.sj-book .p3,
+.sj-book .p45,
+.sj-book .p46{
+	background-color:white;
+	background-image:url(../pics/book-covers.jpg) !important;
+}
+
+.sj-book .p45{
+	background-position:-960px 0 !important;
+}
+
+.sj-book .p46{
+	background-position:-1440px 0 !important;
+}
+```
+
+##### JS
+
+* adjust the pages dynamically, or otherwise to account for page grow or shrink
+
+prophet-flipbook.js
+
+```javascript
+if (newPage<pages-3)
+		$('.sj-book .p45 .depth').css({
+			width: depthWidth,
+			right: 20 - depthWidth
+		});
+	else
+		$('.sj-book .p45 .depth').css({width: 0});
+```
