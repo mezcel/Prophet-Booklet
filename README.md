@@ -17,7 +17,7 @@
 > The JSON file is intended to illustrate/mirror the JSON file used in the existing JavaScript
 
 ```javascript
-var jsonProphets = {...}
+var jsonProphets = {...};
 jsonProphets = jsonProphets.prophets;
 ```
 All I am updating now is just the text readings.
