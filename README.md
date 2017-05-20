@@ -2,20 +2,21 @@
 page curl, page turn, text reader
 
 ### About
-I am mearley applying turn.js with text content featuring prophets of the Christian Bible.
+I am mearley applying turn.js with text content featuring key prophets of the Christian Bible.
 
-I hope to expand it the expand on the primary prohets featued in Islam aswell. In oder to list positive similariteis and constructive difference on the faith traditions.
+I hope to expand it to include prohets featued in Islam in oder to list constuctive similariteis and constructive difference on the two faith traditions. My intentions are purely academic.
 
 ### Status
 
-Demo Video: [YouTube Link](https://www.youtube.com/watch?v=vby99NIII28)
+Outdated Demo Video: [YouTube Link](https://www.youtube.com/watch?v=vby99NIII28)
 
-It works, but its nowhere near a demo yet.
+### Dev. Notes
 
-You must unzip to extracct turn.js version 3 [turn.min.js](https://github.com/mezcel/Prophet-Booklet/blob/master/turn.js-master.zip)
+I am updating the jsonProphets.json file external from the Flipbook index.html file.
 
-Right now I am using turn.js version 3 for the test bench, but hope to finalize with turn.js Version 4.
+the JSON file is intended to illustrate/mirror the JSON file used in the existing JavaScript
 
-Version 4 looks prettier [TURNJS Home Page](http://www.turnjs.com/)
-
-
+```javascript
+var jsonProphets = {...}
+jsonProphets = jsonProphets.prophets;
+```
