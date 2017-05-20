@@ -8,7 +8,7 @@
 
 #### Status
 
-* Outdated Demo Video: [YouTube Link](https://www.youtube.com/watch?v=vby99NIII28)
+* Outdated Demo Video: [YouTube Link](https://www.youtube.com/watch?v=LkJA5SSsctA)
 
 ##### Dev. Notes
 
