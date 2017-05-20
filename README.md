@@ -29,7 +29,7 @@ jsonProphets = jsonProphets.prophets;
 
 * adjust the pages dynamically, or otherwise to account for page grow or shrink
 
-> prophet-flipbook.css
+<em>prophet-flipbook.css</em>
 
 ```css
 .sj-book .p1,
