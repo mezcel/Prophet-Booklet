@@ -1,0 +1,104 @@
+{
+	"prophets":[
+		{
+			"id":0, "name":"Prophet Name", "etymology":"The meaning of the Prophet's name or the Prophet's name refference", "sacredscripture":"Where the Prophet appears in the Bible.", "setting":"Where the Prophet mistered.", "timeline":[0, 0], "historyinformaiton":"A statement history about the prophet.<br> - <a href='http:\/\/www.wikipedia.org' target='_blank'>Wikipedia</a>", "messageinformation":"The Christian bias and point of view on the Prophets. - <a href='http:\/\/w2.vatican.va\/content\/vatican\/it.html' target='_blank'>Catechism</a>", "type":"Major Prophet, The term \"major\" refers to their length, in distinction to the Twelve Minor Prophets, whose books are much shorter and grouped together as a single book in the Hebrew Bible.", "gender":"male/female"
+		},
+		{
+			"id":1, "name":"Elijah",
+			"etymology":"Elijah (Hebrew: Eliyahu, meaning \"My God is Yahu/Jah\") or Elias",
+			"sacredscripture":"Books of Kings in the Hebrew Bible",
+			"setting":"Kingdom of Israel during the reign of Ahab (9th century BC)",
+			"timeline":[-873,-854],
+			"historyinformaiton":"Elijah defended the worship of Yahweh over that of the Canaanite deity Baal. The Christian New Testament describes how Elijah was thought, by some, to be the Messiah. Jesus makes it clear that John the Baptist is \"the Elijah\" who was promised to come in Malachi 4:5. References to Elijah appear in Ecclesiasticus, the New Testament, the Mishnah and Talmud, the Quran, the Book of Mormon, the Doctrine and Covenants. - <a href='https:\/\/en.wikipedia.org\/wiki\/Elijah' target='_blank'>Wikipedia</a>",
+			"messageinformation":"<b>Elijah, the prophets and conversion of heart</b><br>Elijah is the \"father\" of the prophets, \"the generation of those who seek him, who seek the face of the God of Jacob.\" Elijah's name, \"The Lord is my God,\" foretells the people's cry in response to his prayer on Mount Carmel. - <a href='http:\/\/www.vatican.va\/archive\/ccc_css\/archive\/catechism\/p4s1c1a1.htm' target='_blank'><b>2582</b> Catechism</a>",
+			"type":"",
+			"gender":"Male",
+			"art":""
+		},
+		{
+			"id":2, "name":"Elisha",
+			"etymology":"Elisha (Hebrew: Elisha, Tiberian: \"My God is salvation\", Greek: Elissaios or Elisaie, Arabic: AlYasa)",
+			"sacredscripture":"Elisha's story is related in the Book of Kings in the Hebrew Bible (in Judaism, part of the Nevi'im).",
+			"setting":"He was a prophet and a wonderworker of the Northern Kingdom of Israel who was active during the reign of Joram, Jehu, Jehoahaz, and Jehoash (Joash). 9th century BC.",
+			"timeline":[-563, -73],
+			"historyinformaiton":"He was a disciple, and even protege, of Elijah and, after Elijah was taken up into the whirlwind, Elisha was accepted as the leader of the sons of the prophets. - <a href='https:\/\/en.wikipedia.org\/wiki\/Elisha' target='_blank'>Wikipedia</a>",
+			"messageinformation":"In the communion of saints, many and varied spiritualities have been developed throughout the history of the churches. The personal charism of some witnesses to God's love for men has been handed on, like \"the spirit\" of Elijah to Elisha and John the Baptist, so that their followers may have a share in this spirit. A distinct spirituality can also arise at the point of convergence of liturgical and theological currents, bearing witness to the integration of the faith into a particular human environment and its history. The different schools of Christian spirituality share in the living tradition of prayer and are essential guides for the faithful. In their rich diversity they are refractions of the one pure light of the Holy Spirit. - <a href='http:\/\/www.vatican.va\/archive\/ccc_css\/archive\/catechism\/p4s1c2a3.htm' target='_blank'><b>2684</b> Catechism</a>",
+			"type":"",
+			"gender":"Male",
+			"art":""
+		},
+		{
+			"id":3, "name":"Isaiah",
+			"etymology":"Isaiah (Hebrew: Yeshayahu, Greek: Esaias, Latin: Isaias, Arabic: \"Yah is salvation\")",
+			"sacredscripture":"Book of Isaiah", "setting":"Isaiah was the 8th century BCE Jewish prophet who gave his name to the Book of Isaiah. The first verse of the Book of Isaiah states that Isaiah prophesied during the reigns of Uzziah (or Azariah), Jotham,Ahaz, and Hezekiah, the kings of Judah.",
+			"timeline":[-740, -686],
+			"historyinformaiton":"The book of Isaiah, along with the book of Jeremiah, is distinctive in the Hebrew bible for its direct portrayal of the \"wrath of the Lord\". - <a href='https:\/\/en.wikipedia.org\/wiki\/Isaiah' target='_blank'>Wikipedia</a>",
+			"messageinformation":"The characteristics of the awaited Messiah begin to appear in the \"Book of Emmanuel\" (\"Isaiah said this when he saw his glory,\" speaking of Christ), especially in the first two verses of Isaiah 11: <p><em>There shall come forth a shoot from the stump of Jesse,<br>and a branch shall grow out of his roots.<br>And the Spirit of the LORD shall rest upon him,<br>the spirit of wisdom and understanding,<br>the spirit of counsel and might,<br>the spirit of knowledge and the fear of the LORD.</em></p> - <a href='http:\/\/www.vatican.va\/archive\/ccc_css\/archive\/catechism\/p1s2c3a8.htm' target='_blank'><b>712</b> Catechism</a>",
+			"type":"",
+			"gender":"Male",
+			"art":""
+		},
+		{
+			"id":4,
+			"name":"Jeremiah",
+			"etymology":"Jeremiah (Hebrew:Yirmeyahu, Greek: Arabic: Irmiya meaning \"Yah Exalts\")",
+			"sacredscripture":"Jeremiah authored the Book of Jeremiah, the Books of Kings and the Book of Lamentations, with the assistance and under the editorship of Baruch ben Neriah, his scribe and disciple.",
+			"setting":"Jeremiah's ministry was active from the thirteenth year of Josiah, king of Judah 626 BC, until after the fall of Jerusalem and the destruction of Solomon's Temple in  587 BC.",
+			"timeline":[-626, -587],
+			"historyinformaiton":"Jeremiah, also called the\"Weeping prophet\", was one of the major prophets of the Hebrew Bible. Jeremiah was called by YHWH to give prophesy of Jerusalem's destruction that would occur by invaders from the north. This was because Israel had been unfaithful to the laws of the covenant and had forsaken God by worshiping Baal. - <a href='https:\/\/en.wikipedia.org\/wiki\/Jeremiah' target='_blank'>Wikipedia</a>",
+			"messageinformation":"220 God's love is \"everlasting\": \"For the mountains may depart and the hills be removed, but my steadfast love shall not depart from you.\" Through Jeremiah, God declares to his people, \"I have loved you with an everlasting love; therefore I have continued my faithfulness to you.\" <a href='http:\/\/www.vatican.va\/archive\/ccc_css\/archive\/catechism\/p1s2c1p1.htm#220'><b>220</b> Catechism</a>",
+			"type":"Major Prophet", "gender":"Male",
+			"art":""
+		},
+		{
+			"id":5,
+			"name":"Ezekiel",
+			"etymology":"Ezekiel, signifies \"strong is God\", or \"whom God makes strong\"",
+			"sacredscripture":"Book of Ezekiel",
+			"setting":"Ezekiel and his contemporaries like Jeremiah, another prophet who was living in Jerusalem at that time, witnessed the fulfillment of their prophecies with the siege of Jerusalem by the Babylonians. Ezekiel settled near the Great Canal between Babylon and Nippur, in southern Babylonia.",
+			"timeline":[-622, -570],
+			"historyinformaiton":"Ezekiel is acknowledged as a Hebrew prophet. In Judaism and Christianity, he is also viewed as the 6thcentury BCE author of the Book of Ezekiel that reveals prophecies regarding the destruction of Jerusalem, the restoration to the land of Israel, and what some call the Millennial Temple visions, or the Third Temple. - <a href='https:\/\/en.wikipedia.org\/wiki\/Ezekiel' target='_blank'>Wikipedia</a>",
+			"messageinformation":"Ezekiel was called to foretell God's faithfulness in the midst of trials, as well as in the fulfillment of His promises. During the first period of his career, he foretold the complete destruction of the kingdom of Juda, and the annihilation of the city and temple. After the fulfillment of these predictions, he was commanded to announce the future return from exile, the re-establishment of the people in their own country and, especially, the triumph of the Kingdom of the Messiah, the second David, so that the people would not abandon themselves to despair and perish as a nation, through contact with the Gentiles, whose gods had apparently triumphed over the God of Israel. - <a href = 'http:\/\/www.newadvent.org\/cathen\/05737b.htm'>New Advent</a>",
+			"type":"Major Prophet",
+			"gender":"Male",
+			"art":""
+		},
+		{
+	        "id":6,
+	        "name":"Daniel",
+	        "etymology":"Daniel means, \"God is my judge\".",
+	        "sacredscripture":"Book of Daniel in the Hebrew Bible",
+	        "setting":"A noble Jewish youth of Jerusalem, he is taken into captivity by Nebuchadnezzar of Babylon and serves the king and his successors with loyalty and ability until the time of the Persian conqueror Cyrus, all the while remaining true to the God of Israel. - <a href='https:\/\/en.wikipedia.org\/wiki\/Daniel_(biblical_figure)' target='_blank'>Wikipedia</a>",
+	        "timeline":[167, 100],
+	        "historyinformaiton":"A noble Jewish youth of Jerusalem, he is taken into captivity by Nebuchadnezzar of Babylon and serves the king and his successors with loyalty and ability until the time of the Persian conqueror Cyrus, all the while remaining true to the God of Israel. - <a href='https:\/\/en.wikipedia.org\/wiki\/Daniel_(biblical_figure)' target='_blank'>Wikipedia</a>",
+	        "messageinformation":"664 Being seated at the Father's right hand signifies the inauguration of the Messiah's kingdom, the fulfillment of the prophet Daniel's vision concerning the Son of man: \"To him was given dominion and glory and kingdom, that all peoples, nations, and languages should serve him; his dominion is an everlasting dominion, which shall not pass away, and his kingdom one that shall not be destroyed. \"After this event the apostles became witnesses of the \"kingdom [that] will have no end\".\" <a href = 'http:\/\/www.vatican.va\/archive\/ccc_css\/archive\/catechism\/p1s2c1p1.htm#664' target='_blank'><b>664</b> Catechism</a>",
+	        "type":"Major Prophet",
+	        "gender":"Male",
+	        "art":""
+	    },
+		{
+	        "id":7,
+	        "name":"Obadiah",
+	        "etymology":"",
+	        "sacredscripture":"",
+	        "setting":"",
+	        "timeline":[0, 0],
+	        "historyinformaiton":"",
+	        "messageinformation":"",
+	        "type":"",
+	        "gender":"",
+	        "art":""
+	    },
+		{"id":8, "name":"Joel", "etymology":"", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "art":""},
+		{"id":9, "name":"Jonah", "etymology":"", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "art":""},
+		{"id":10, "name":"Amos", "etymology":"", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "art":""},
+		{"id":12, "name":"Hosea", "etymology":"", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "art":""},
+		{"id":13, "name":"Micah", "etymology":"", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "art":""},
+		{"id":14, "name":"Nahum", "etymology":"", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "art":""},
+		{"id":15, "name":"Habakkuk", "etymology":"", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "art":""},
+		{"id":16, "name":"Zephaniah", "etymology":"", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "art":""},
+		{"id":17, "name":"Haggai", "etymology":"", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "art":""},
+		{"id":18, "name":"Zechariah", "etymology":"", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "art":""},
+		{"id":19, "name":"Malachi", "etymology":"", "sacredscripture":"", "setting":"", "timeline":[0, 0], "historyinformaiton":"", "messageinformation":"", "type":"", "gender":"", "art":""}
+	]
+}
