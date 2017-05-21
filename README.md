@@ -2,7 +2,7 @@
 ###### A page curl, page turn, text reader
 
 #### About
-* I am merely applying turn.js with text content featuring key prophets of the Christian Bible. Inspiration to do this came from a Musilim who was taking his faith seriousely and was starting to re-learn the prophets. This inspired me to aslo do the same.
+* I am merely applying turn.js with text content featuring key prophets of the Christian Bible. Inspiration to do this came from a Musilim who was renewing his faith and was starting to re-learn the prophets. This inspired me to aslo do the same, but as a Christian.
 
 #### Projsct Status
 
