@@ -6,8 +6,8 @@
 
 #### Projsct Status
 
-* The book is done, but the stext content is stull under construction.
-* Outdated Demo Video: [YouTube Link](https://www.youtube.com/watch?v=LkJA5SSsctA)
+* The physical book is done, but the text content is still under construction.
+* Demo Video: [YouTube Link](https://www.youtube.com/watch?v=LkJA5SSsctA)
 
 ##### Dev. Notes
 
@@ -25,7 +25,7 @@ jsonProphets = jsonProphets.prophets;
 
 ##### CSS
 
-* adjust the pages dynamically, or otherwise to account for page grow or shrink, at the moment my book has 46 page faces
+* Note: to adjust the pages dynamically, or otherwise to account for page grow or shrink, at the moment my book has 46 page faces
 
 <em>prophet-flipbook.css</em>
 
@@ -50,7 +50,7 @@ jsonProphets = jsonProphets.prophets;
 
 ##### JS
 
-* adjust the pages dynamically, or otherwise to account for page grow or shrink, at the moment my book has 46 page faces
+* Note: adjust the pages dynamically, or otherwise to account for page grow or shrink, at the moment my book has 46 page faces
 
 <em> prophet-flipbook.js</em>
 
