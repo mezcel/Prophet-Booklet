@@ -25,7 +25,7 @@ jsonProphets = jsonProphets.prophets;
 
 ##### CSS
 
-* Note: to adjust the pages dynamically, or otherwise to account for page grow or shrink, at the moment my book has 46 page faces
+* Note: At the moment my book has 46 page faces, chege the last 2 pages to fit your own book design.
 
 <em>prophet-flipbook.css</em>
 
@@ -50,7 +50,7 @@ jsonProphets = jsonProphets.prophets;
 
 ##### JS
 
-* Note: adjust the pages dynamically, or otherwise to account for page grow or shrink, at the moment my book has 46 page faces
+* Note: At the moment my book has 46 page faces, chege the last 2 pages to fit your own book design.
 
 <em> prophet-flipbook.js</em>
 
