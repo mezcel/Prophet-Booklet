@@ -1,19 +1,17 @@
 # Prophet Booklet
-###### page curl, page turn, text reader
+###### A page curl, page turn, text reader
 
 #### About
-* I am merely applying turn.js with text content featuring key prophets of the Christian Bible.
+* I am merely applying turn.js with text content featuring key prophets of the Christian Bible. Inspiration to do this came from a Musilim who was taking his faith seriousely and was starting to re-learn the prophets. This inspired me to aslo do the same.
 
-* I hope to expand it to include the women prophets. My intentions are purely academic.
+#### Projsct Status
 
-#### Status
-
+* The book is done, but the stext content is stull under construction.
 * Outdated Demo Video: [YouTube Link](https://www.youtube.com/watch?v=LkJA5SSsctA)
 
 ##### Dev. Notes
 
-* I am updating the [jsonProphets.json](https://github.com/mezcel/Prophet-Booklet/blob/master/jsonProphets.json) file external from the Flipbook index.html file.
-
+* The [jsonProphets.json](https://github.com/mezcel/Prophet-Booklet/blob/master/jsonProphets.json) file is the only thing I am updating utill the Final Post.
 * The JSON file is intended to illustrate/mirror the JSON file used in the existing JavaScript
 
 > Contained within the [Prophet Flipbook - Turnjs 4.zip](https://github.com/mezcel/Prophet-Booklet/blob/master/Prophet%20Flipbook%20-%20Turnjs%204.zip), index.html
